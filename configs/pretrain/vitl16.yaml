@@ -4,7 +4,7 @@ tasks_per_node: 1
 data:
   dataset_type: VideoDataset
   datasets:
-    - ./k400-2x32/k400_file_index.csv
+    - ./k400-2x32/nano-k400_train.csv
   decode_one_clip: true
   batch_size: 8
   num_clips: 1
