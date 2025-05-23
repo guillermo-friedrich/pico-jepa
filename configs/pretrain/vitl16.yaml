@@ -4,7 +4,7 @@ tasks_per_node: 1
 data:
   dataset_type: VideoDataset
   datasets:
-    - /content/pico-jepa/k400-2x32/nano-k400_train.csv
+    - /content/pico-jepa/k400-2x32/nano-train2x32.csv
   decode_one_clip: true
   batch_size: 8
   num_clips: 1
