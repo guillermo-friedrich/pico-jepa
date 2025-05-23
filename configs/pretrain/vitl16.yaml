@@ -10,11 +10,11 @@ data:
   num_clips: 1
   num_frames: 16
   tubelet_size: 2
-  sampling_rate: 4
+  sampling_rate: 10
   crop_size: 224
   patch_size: 16
   pin_mem: true
-  num_workers: 8
+  num_workers: 4
   filter_short_videos: false
   clip_duration: null
 data_aug:
@@ -73,12 +73,12 @@ model:
   use_mask_tokens: true
   zero_init_mask_tokens: true
 optimization:
-  ipe: 3
+  ipe: 4
   ipe_scale: 1.25
   clip_grad: 10.0
   weight_decay: 0.04
   final_weight_decay: 0.4
-  epochs: 4
+  epochs: 64
   warmup: 40
   start_lr: 0.0002
   lr: 0.000625
